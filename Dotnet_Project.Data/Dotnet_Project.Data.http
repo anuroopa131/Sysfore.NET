@@ -1,0 +1,6 @@
+@Dotnet_Project.Data_HostAddress = http://localhost:5122
+
+GET {{Dotnet_Project.Data_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

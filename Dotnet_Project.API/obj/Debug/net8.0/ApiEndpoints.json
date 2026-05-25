@@ -1,0 +1,97 @@
+[
+  {
+    "ContainingType": "Dotnet_Project.API.Controllers.Dotnet_ProjectController",
+    "Method": "GetEmployees",
+    "RelativePath": "api/Dotnet_Project",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Dotnet_Project.API.Controllers.Dotnet_ProjectController",
+    "Method": "CreateEmployee",
+    "RelativePath": "api/Dotnet_Project",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "Dotnet_Project.Common.Model.Employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Dotnet_Project.API.Controllers.Dotnet_ProjectController",
+    "Method": "GetEmployeeById",
+    "RelativePath": "api/Dotnet_Project/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Dotnet_Project.API.Controllers.Dotnet_ProjectController",
+    "Method": "UpdateEmployee",
+    "RelativePath": "api/Dotnet_Project/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedEmployee",
+        "Type": "Dotnet_Project.Common.Model.Employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Dotnet_Project.API.Controllers.Dotnet_ProjectController",
+    "Method": "DeleteEmployee",
+    "RelativePath": "api/Dotnet_Project/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Dotnet_Project.API.Controllers.Dotnet_ProjectController",
+    "Method": "DeleteMultipleEmployees",
+    "RelativePath": "api/Dotnet_Project/bulk",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

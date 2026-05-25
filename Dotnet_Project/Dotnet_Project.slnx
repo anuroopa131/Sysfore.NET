@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../Dotnet_Project.API/Dotnet_Project.API.csproj" Id="cef63ff6-b44d-42ad-aa46-da8994baefc4" />
+  <Project Path="../Dotnet_Project.Common/Dotnet_Project.Common.csproj" Id="d1038868-93c0-4ae0-9a26-d307d041e4f9" />
+  <Project Path="../Dotnet_Project.Data/Dotnet_Project.Data.csproj" Id="d0336b27-99f3-4167-bc24-5e61e0575292" />
+  <Project Path="../Dotnet_Project.Service/Dotnet_Project.Service.csproj" Id="285035c8-2c77-4085-9cf8-a23cbd21c7e5" />
+  <Project Path="../Dotnet_Project.Share/Dotnet_Project.Share.csproj" Id="8db6c9eb-8735-46d0-a54f-69e7144b3131" />
+</Solution>
