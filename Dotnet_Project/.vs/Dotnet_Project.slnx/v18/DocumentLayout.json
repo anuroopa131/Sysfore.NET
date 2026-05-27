@@ -1,15 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\anuro\\Desktop\\Sysfore\\Dotnet_Project\\",
+  "WorkspaceRootPath": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEF63FF6-B44D-42AD-AA46-DA8994BAEFC4}|..\\Dotnet_Project.API\\Dotnet_Project.API.csproj|c:\\users\\anuro\\desktop\\sysfore\\dotnet_project.api\\controllers\\dotnet_projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF63FF6-B44D-42AD-AA46-DA8994BAEFC4}|..\\Dotnet_Project.API\\Dotnet_Project.API.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1038868-93C0-4AE0-9A26-D307D041E4F9}|..\\Dotnet_Project.Common\\Dotnet_Project.Common.csproj|c:\\users\\anuro\\desktop\\sysfore\\dotnet_project.common\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF63FF6-B44D-42AD-AA46-DA8994BAEFC4}|..\\Dotnet_Project.API\\Dotnet_Project.API.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.api\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1038868-93C0-4AE0-9A26-D307D041E4F9}|..\\Dotnet_Project.Common\\Dotnet_Project.Common.csproj|c:\\users\\anuro\\desktop\\sysfore\\dotnet_project.common\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1038868-93C0-4AE0-9A26-D307D041E4F9}|..\\Dotnet_Project.Common\\Dotnet_Project.Common.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.common\\model\\sqlconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF63FF6-B44D-42AD-AA46-DA8994BAEFC4}|..\\Dotnet_Project.API\\Dotnet_Project.API.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{285035C8-2C77-4085-9CF8-A23CBD21C7E5}|..\\Dotnet_Project.Service\\Dotnet_Project.Service.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.service\\abstractions\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DB6C9EB-8735-46D0-A54F-69E7144B3131}|..\\Dotnet_Project.Share\\Dotnet_Project.Store.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.share\\abstractions\\irolestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1038868-93C0-4AE0-9A26-D307D041E4F9}|..\\Dotnet_Project.Common\\Dotnet_Project.Common.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.common\\model\\parameterconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1038868-93C0-4AE0-9A26-D307D041E4F9}|..\\Dotnet_Project.Common\\Dotnet_Project.Common.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.common\\model\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF63FF6-B44D-42AD-AA46-DA8994BAEFC4}|..\\Dotnet_Project.API\\Dotnet_Project.API.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DB6C9EB-8735-46D0-A54F-69E7144B3131}|..\\Dotnet_Project.Share\\Dotnet_Project.Store.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.share\\implementations\\employeestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DB6C9EB-8735-46D0-A54F-69E7144B3131}|..\\Dotnet_Project.Share\\Dotnet_Project.Store.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.share\\abstractions\\iemployeestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{285035C8-2C77-4085-9CF8-A23CBD21C7E5}|..\\Dotnet_Project.Service\\Dotnet_Project.Service.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.service\\implementations\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{285035C8-2C77-4085-9CF8-A23CBD21C7E5}|..\\Dotnet_Project.Service\\Dotnet_Project.Service.csproj|c:\\users\\anuro\\desktop\\sysfore\\sysfore_dotnet\\dotnet_project.service\\abstractions\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,42 +65,168 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Dotnet_Project.Common\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Dotnet_Project.Common\\Program.cs",
-              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Dotnet_Project.Common\\Program.cs",
-              "RelativeToolTip": "..\\Dotnet_Project.Common\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAADwvxQAAAAXAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.API\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.API\\Program.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.API\\Program.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.API\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T04:55:23.188Z",
+              "WhenOpened": "2026-05-26T18:10:12.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Service\\Abstractions\\IRoleService.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.Service\\Abstractions\\IRoleService.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Service\\Abstractions\\IRoleService.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.Service\\Abstractions\\IRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T18:09:25.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IRoleStore.cs",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Share\\Abstractions\\IRoleStore.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.Share\\Abstractions\\IRoleStore.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Share\\Abstractions\\IRoleStore.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.Share\\Abstractions\\IRoleStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T18:08:25.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Dotnet_Project.Common\\Model\\Employee.cs",
-              "RelativeDocumentMoniker": "..\\Dotnet_Project.Common\\Model\\Employee.cs",
-              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Dotnet_Project.Common\\Model\\Employee.cs",
-              "RelativeToolTip": "..\\Dotnet_Project.Common\\Model\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Title": "SqlConstants.cs",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Common\\Model\\SqlConstants.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.Common\\Model\\SqlConstants.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Common\\Model\\SqlConstants.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.Common\\Model\\SqlConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T04:39:50.644Z",
+              "WhenOpened": "2026-05-26T18:07:17.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Common\\Model\\Role.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.Common\\Model\\Role.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Common\\Model\\Role.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.Common\\Model\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T18:05:25.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.API\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.API\\appsettings.json",
+              "RelativeToolTip": "..\\Dotnet_Project.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-26T11:17:30.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Dotnet_ProjectController.cs",
-              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Dotnet_Project.API\\Controllers\\Dotnet_ProjectController.cs",
-              "RelativeDocumentMoniker": "..\\Dotnet_Project.API\\Controllers\\Dotnet_ProjectController.cs",
-              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Dotnet_Project.API\\Controllers\\Dotnet_ProjectController.cs",
-              "RelativeToolTip": "..\\Dotnet_Project.API\\Controllers\\Dotnet_ProjectController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAawFwAAAA+AAAAAAAAAA==",
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.API\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.API\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.API\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.API\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T04:30:29.292Z",
+              "WhenOpened": "2026-05-26T09:24:22.962Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.API\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.API\\Controllers\\RoleController.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.API\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.API\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAowHsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T18:14:54.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmployeeStore.cs",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Share\\Implementations\\EmployeeStore.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.Share\\Implementations\\EmployeeStore.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Share\\Implementations\\EmployeeStore.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.Share\\Implementations\\EmployeeStore.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAkwHkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T08:06:08.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IEmployeeStore.cs",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Share\\Abstractions\\IEmployeeStore.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.Share\\Abstractions\\IEmployeeStore.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Share\\Abstractions\\IEmployeeStore.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.Share\\Abstractions\\IEmployeeStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T08:05:41.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ParameterConstants.cs",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Common\\Model\\ParameterConstants.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.Common\\Model\\ParameterConstants.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Common\\Model\\ParameterConstants.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.Common\\Model\\ParameterConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T09:52:01.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Service\\Implementations\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.Service\\Implementations\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Service\\Implementations\\EmployeeService.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.Service\\Implementations\\EmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T07:55:02.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Service\\Abstractions\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "..\\Dotnet_Project.Service\\Abstractions\\IEmployeeService.cs",
+              "ToolTip": "C:\\Users\\anuro\\Desktop\\Sysfore\\Sysfore_Dotnet\\Dotnet_Project.Service\\Abstractions\\IEmployeeService.cs",
+              "RelativeToolTip": "..\\Dotnet_Project.Service\\Abstractions\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T07:53:33.37Z"
             }
           ]
         }

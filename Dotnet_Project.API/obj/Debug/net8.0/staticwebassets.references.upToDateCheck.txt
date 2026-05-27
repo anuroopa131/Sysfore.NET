@@ -1,7 +1,0 @@
-C:\Users\anuro\Desktop\Sysfore\Dotnet_Project.Common\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\anuro\Desktop\Sysfore\Dotnet_Project.Common\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\anuro\Desktop\Sysfore\Dotnet_Project.Common\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\anuro\Desktop\Sysfore\Dotnet_Project.Common\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\anuro\Desktop\Sysfore\Dotnet_Project.Common\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\anuro\Desktop\Sysfore\Dotnet_Project.Common\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\anuro\Desktop\Sysfore\Dotnet_Project.Common\obj\Debug\net8.0\staticwebassets.build.json

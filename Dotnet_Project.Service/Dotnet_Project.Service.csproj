@@ -4,10 +4,16 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dotnet_Project.Common\Dotnet_Project.Common.csproj" />
+    <ProjectReference Include="..\Dotnet_Project.Share\Dotnet_Project.Store.csproj" />
   </ItemGroup>
 
 </Project>
