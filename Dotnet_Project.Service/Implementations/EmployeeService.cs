@@ -1,7 +1,9 @@
 ﻿using Dotnet_Project.Common.Model;
 using Dotnet_Project.Service.Abstractions;
 using Dotnet_Project.Store.Abstractions;
-
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 namespace Dotnet_Project.Service.Implementations
 {
     public class EmployeeService : IEmployeeService
@@ -13,29 +15,49 @@ namespace Dotnet_Project.Service.Implementations
             _employeeStore = employeeStore;
         }
 
-        public async Task<List<Employee>> GetEmployees()
+        /// <summary>
+        /// Service method to insert employee
+        /// </summary>
+        /// 
+        public async Task<Employee?> GetByUsername(string username)
         {
-            return await _employeeStore.GetEmployees();
+            return await _employeeStore.GetByUsername(username);
         }
-
-        public async Task<Employee> GetEmployeeById(int id)
-        {
-            return await _employeeStore.GetEmployeeById(id);
-        }
-
         public async Task<bool> InsertEmployee(Employee employee)
         {
             return await _employeeStore.InsertEmployee(employee);
         }
 
+        /// <summary>
+        /// Service method to get all employees
+        /// </summary>
+        public async Task<List<Employee>> GetEmployees()
+        {
+            return await _employeeStore.GetEmployees();
+        }
+
+        /// <summary>
+        /// Service method to get employee by id
+        /// </summary>
+        public async Task<Employee?> GetEmployeeById(int employeeId)
+        {
+            return await _employeeStore.GetEmployeeById(employeeId);
+        }
+
+        /// <summary>
+        /// Service method to update employee
+        /// </summary>
         public async Task<bool> UpdateEmployee(Employee employee)
         {
             return await _employeeStore.UpdateEmployee(employee);
         }
 
-        public async Task<bool> DeleteEmployee(int id)
+        /// <summary>
+        /// Service method to delete employee
+        /// </summary>
+        public async Task<bool> DeleteEmployee(int employeeId)
         {
-            return await _employeeStore.DeleteEmployee(id);
+            return await _employeeStore.DeleteEmployee(employeeId);
         }
     }
 }

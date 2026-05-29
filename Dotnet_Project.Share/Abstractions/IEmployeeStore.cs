@@ -1,8 +1,9 @@
 ﻿using Dotnet_Project.Common.Model;
 
-namespace Dotnet_Project.Service.Abstractions
+
+namespace Dotnet_Project.Store.Abstractions
 {
-    public interface IEmployeeService
+    public interface IEmployeeStore
     {
         Task<Employee?> GetByUsername(string username); 
         Task<bool> InsertEmployee(Employee employee);

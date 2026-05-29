@@ -4,21 +4,17 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Library</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
     <PackageReference Include="Dapper" Version="2.1.79" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.18.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Dotnet_Project.Common\Dotnet_Project.Common.csproj" />
-    <ProjectReference Include="..\Dotnet_Project.Service\Dotnet_Project.Service.csproj" />
-    <ProjectReference Include="..\Dotnet_Project.Share\Dotnet_Project.Store.csproj" />
   </ItemGroup>
 
 </Project>
