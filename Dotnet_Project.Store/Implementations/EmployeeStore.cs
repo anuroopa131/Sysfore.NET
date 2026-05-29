@@ -1,147 +1,116 @@
 ﻿using Dapper;
-using Microsoft.Data.SqlClient;
-using System.Data;
-
 using Dotnet_Project.Common.Constants;
 using Dotnet_Project.Common.Model;
 using Dotnet_Project.Store.Abstractions;
+using Microsoft.Data.SqlClient;
+using System.Data;
 
-namespace Dotnet_Project.Store.Implementations
+namespace Dotnet_Project.Store.Implementations;
+
+public class EmployeeStore : IEmployeeStore
 {
-    public class EmployeeStore : IEmployeeStore
+    private readonly string _connectionString;
+
+    public EmployeeStore(IConfiguration configuration)
     {
-        private readonly IConfiguration _configuration;
+        _connectionString =
+            configuration.GetConnectionString("DefaultConnection")
+            ?? throw new Exception("Connection string missing");
+    }
 
-        public EmployeeStore(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+    public async Task<bool> InsertEmployee(Employee employee)
+    {
+        using var connection = new SqlConnection(_connectionString);
 
-        public async Task<List<Employee>> GetEmployees()
-        {
-            try
-            {
-                using SqlConnection connection =
-                    new SqlConnection(
-                        _configuration.GetConnectionString("DefaultConnection"));
+        var parameters = new DynamicParameters();
 
-                var result = await connection.QueryAsync<Employee>(
-                    SqlConstants.GetEmployees,
-                    commandType: CommandType.StoredProcedure);
+        parameters.Add(ParameterConstants.FullName, employee.FullName);
+        parameters.Add(ParameterConstants.Email, employee.Email);
+        parameters.Add(ParameterConstants.Username, employee.Username);
+        parameters.Add(ParameterConstants.PasswordHash, employee.PasswordHash);
+        parameters.Add(ParameterConstants.RoleId, employee.RoleId);
+        parameters.Add(ParameterConstants.IsActive, employee.IsActive);
 
-                return result.ToList();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
+        int rows = await connection.ExecuteAsync(
+            SqlConstants.InsertEmployee,
+            parameters,
+            commandType: CommandType.StoredProcedure);
 
-        public async Task<Employee> GetEmployeeById(int id)
-        {
-            try
-            {
-                using SqlConnection connection =
-                    new SqlConnection(
-                        _configuration.GetConnectionString("DefaultConnection"));
+        return rows > 0;
+    }
 
-                var parameters = new DynamicParameters();
+    public async Task<IEnumerable<Employee>> GetEmployees()
+    {
+        using var connection = new SqlConnection(_connectionString);
 
-                parameters.Add(ParameterConstants.Id, id);
+        return await connection.QueryAsync<Employee>(
+            SqlConstants.GetEmployees,
+            commandType: CommandType.StoredProcedure);
+    }
 
-                var result =
-                    await connection.QueryFirstOrDefaultAsync<Employee>(
-                        SqlConstants.GetEmployeeById,
-                        parameters,
-                        commandType: CommandType.StoredProcedure);
+    public async Task<Employee?> GetEmployeeById(int id)
+    {
+        using var connection = new SqlConnection(_connectionString);
 
-                return result;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
+        var parameters = new DynamicParameters();
 
-        public async Task<bool> InsertEmployee(Employee employee)
-        {
-            try
-            {
-                using SqlConnection connection =
-                    new SqlConnection(
-                        _configuration.GetConnectionString("DefaultConnection"));
+        parameters.Add(ParameterConstants.EmployeeId, id);
 
-                var parameters = new DynamicParameters();
+        return await connection.QueryFirstOrDefaultAsync<Employee>(
+            SqlConstants.GetEmployeeById,
+            parameters,
+            commandType: CommandType.StoredProcedure);
+    }
 
-                parameters.Add(ParameterConstants.Name, employee.Name);
+    public async Task<bool> UpdateEmployee(Employee employee)
+    {
+        using var connection = new SqlConnection(_connectionString);
 
-                parameters.Add(ParameterConstants.Position, employee.Position);
+        var parameters = new DynamicParameters();
 
-                int rowsAffected = await connection.ExecuteAsync(
-                    SqlConstants.InsertEmployee,
-                    parameters,
-                    commandType: CommandType.StoredProcedure);
+        parameters.Add(ParameterConstants.EmployeeId, employee.EmployeeId);
+        parameters.Add(ParameterConstants.FullName, employee.FullName);
+        parameters.Add(ParameterConstants.Email, employee.Email);
+        parameters.Add(ParameterConstants.Username, employee.Username);
+        parameters.Add(ParameterConstants.PasswordHash, employee.PasswordHash);
+        parameters.Add(ParameterConstants.RoleId, employee.RoleId);
+        parameters.Add(ParameterConstants.IsActive, employee.IsActive);
 
-                return rowsAffected > 0;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
+        int rows = await connection.ExecuteAsync(
+            SqlConstants.UpdateEmployee,
+            parameters,
+            commandType: CommandType.StoredProcedure);
 
-        public async Task<bool> UpdateEmployee(Employee employee)
-        {
-            try
-            {
-                using SqlConnection connection =
-                    new SqlConnection(
-                        _configuration.GetConnectionString("DefaultConnection"));
+        return rows > 0;
+    }
 
-                var parameters = new DynamicParameters();
+    public async Task<bool> DeleteEmployee(int id)
+    {
+        using var connection = new SqlConnection(_connectionString);
 
-                parameters.Add(ParameterConstants.Id, employee.Id);
+        var parameters = new DynamicParameters();
 
-                parameters.Add(ParameterConstants.Name, employee.Name);
+        parameters.Add(ParameterConstants.EmployeeId, id);
 
-                parameters.Add(ParameterConstants.Position, employee.Position);
+        int rows = await connection.ExecuteAsync(
+            SqlConstants.DeleteEmployee,
+            parameters,
+            commandType: CommandType.StoredProcedure);
 
-                int rowsAffected = await connection.ExecuteAsync(
-                    SqlConstants.UpdateEmployee,
-                    parameters,
-                    commandType: CommandType.StoredProcedure);
+        return rows > 0;
+    }
 
-                return rowsAffected > 0;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
+    public async Task<Employee?> GetByUsername(string username)
+    {
+        using var connection = new SqlConnection(_connectionString);
 
-        public async Task<bool> DeleteEmployee(int id)
-        {
-            try
-            {
-                using SqlConnection connection =
-                    new SqlConnection(
-                        _configuration.GetConnectionString("DefaultConnection"));
+        var parameters = new DynamicParameters();
 
-                var parameters = new DynamicParameters();
+        parameters.Add("@Username", username);
 
-                parameters.Add(ParameterConstants.Id, id);
-
-                int rowsAffected = await connection.ExecuteAsync(
-                    SqlConstants.DeleteEmployee,
-                    parameters,
-                    commandType: CommandType.StoredProcedure);
-
-                return rowsAffected > 0;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
+        return await connection.QueryFirstOrDefaultAsync<Employee>(
+            SqlConstants.GetEmployeeByUsername,
+            parameters,
+            commandType: CommandType.StoredProcedure);
     }
 }

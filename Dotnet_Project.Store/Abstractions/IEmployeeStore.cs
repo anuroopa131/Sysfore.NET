@@ -1,17 +1,18 @@
 ﻿using Dotnet_Project.Common.Model;
 
-namespace Dotnet_Project.Store.Abstractions
+namespace Dotnet_Project.Store.Abstractions;
+
+public interface IEmployeeStore
 {
-    public interface IEmployeeStore
-    {
-        Task<List<Employee>> GetEmployees();
+    Task<bool> InsertEmployee(Employee employee);
 
-        Task<Employee> GetEmployeeById(int id);
+    Task<IEnumerable<Employee>> GetEmployees();
 
-        Task<bool> InsertEmployee(Employee employee);
+    Task<Employee?> GetEmployeeById(int id);
 
-        Task<bool> UpdateEmployee(Employee employee);
+    Task<bool> UpdateEmployee(Employee employee);
 
-        Task<bool> DeleteEmployee(int id);
-    }
+    Task<bool> DeleteEmployee(int id);
+
+    Task<Employee?> GetByUsername(string username);
 }

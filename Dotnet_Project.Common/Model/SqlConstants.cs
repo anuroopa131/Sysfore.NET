@@ -2,14 +2,18 @@
 {
     public static class SqlConstants
     {
-    
-      
-            public const string InsertEmployee = "usp_InsertEmployee";
-            public const string GetEmployees = "usp_GetEmployees";
-            public const string GetEmployeeById = "usp_GetEmployeeById";
-            public const string UpdateEmployee = "usp_UpdateEmployee";
-            public const string DeleteEmployee = "usp_DeleteEmployee";
-        public const string GetEmployeeByUsername = "usp_GetEmployeeByUsername";
+
+        public const string InsertEmployee = "usp_InsertEmployee";
+
+        public const string GetEmployees = "usp_GetEmployees";
+
+        public const string GetEmployeeById = "usp_GetEmployeeById";
+
+        public const string UpdateEmployee = "usp_UpdateEmployee";
+
+        public const string DeleteEmployee = "usp_DeleteEmployee";
+
+        public const string GetEmployeeByUsername ="usp_GetEmployeeByUsername";
 
         public const string InsertRole = "usp_InsertRole";
         public const string GetRoles = "usp_GetRoles";

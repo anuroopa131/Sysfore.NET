@@ -18,7 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Dotnet_Project.Common\Dotnet_Project.Common.csproj" />
     <ProjectReference Include="..\Dotnet_Project.Service\Dotnet_Project.Service.csproj" />
-    <ProjectReference Include="..\Dotnet_Project.Share\Dotnet_Project.Store.csproj" />
+    <ProjectReference Include="..\Dotnet_Project.Store\Dotnet_Project.Store.csproj" />
   </ItemGroup>
 
 </Project>
